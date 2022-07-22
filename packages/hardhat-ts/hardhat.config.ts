@@ -53,7 +53,7 @@ const getMnemonic = () => {
 };
 
 const config: HardhatUserConfig = {
-  defaultNetwork: 'rinkeby',
+  defaultNetwork: 'ropsten',
   namedAccounts: {
     deployer: {
       default: 0, // here this will by default take the first account as deployer

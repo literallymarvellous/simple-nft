@@ -65,4 +65,11 @@ describe('🚩 Challenge 0: 🎟 Simple NFT Example 🤓', function () {
       });
     });
   });
+
+  describe('tokenURI', function () {
+    it('Should return the correct tokenURI', async function () {
+      const token = await myContract.tokenURI(1);
+      expect(token).to.equal('https://ipfs.io/ipfs/QmfVMAmNM1kDEBYrC2TPzQDoCRFH6F5tE1e9Mr4FkkR5Xr');
+    });
+  });
 });
